@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    height: 92vh;
+    width: 100vw;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #fbc531 100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#user-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    border-radius: 12px 12px 0px 0px;
+    font-weight: 600;
+    background-color:  rgb(64, 60, 60);
+    color: white;
+    width: 35%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 12px black;
+}
+
+#center-div {
+    border-radius: 0px 0px 12px 12px;
+    background-color: white;
+    width: 35%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 15px 0px;
+}
+
+
+form {
+	border-radius: 0px 0px 12px 12px;
+    background-color: white;
+    width: 35%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 9px 15px 0px;
+}
+
+#chooseOption {
+	border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    width: 70%;
+    font-size: 1.2rem;
+}
+
+#chooseOption:focus {
+    border-bottom: 1px solid rgb(246, 127, 83);
+}
+
+
+.btn {
+    background-color: rgb(234, 167, 42);
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    
+    margin-top: 1.5rem;
+}
+
+.btn:hover {
+    color: black;
+    background-color: rgb(234, 167, 42);
+}

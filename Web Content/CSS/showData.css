@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* only upper box */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* copied from online resource */
+.radio {
+	padding: 4px;
+	border: none;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.radio input {
+	width: auto;
+	height: 100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 2px;
+	padding: 4px 8px;
+    background: wheat;
+    color: black;
+	font-size: 14px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		"Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	transition: all 100ms linear;
+}
+
+.radio input:checked {
+	background-color: #FBAB7E;
+	background-image: linear-gradient(62deg, #FBAB7E 0%, #fbc531 100%);
+	color: #fff;
+	box-shadow: 0 1px 1px #0000002e;
+	text-shadow: 0 1px 0px #79485f7a;
+}
+
+.radio input:before {
+	content: attr(label);
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+
+.containerr {
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #fbc531 100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: cadetblue;
+    width: 100vw;
+    height: 92vh;
+}
+
+.upperBox {
+    width: 98vw;
+    height: 18vh;
+    background-color: white;
+    border-radius: 8px 8px 0px 0px;
+   	margin-top: 0.1rem;
+}
+
+#searchViaOtherAttributes
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65%;
+}
+
+#searchViaOtherAttributes select {
+	padding: 0;
+	text-indent: 1rem;	
+}
+
+#searchViaOtherAttributesInp {
+	display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100%;
+}
+
+#searchViaOtherAttributesBtn {
+	margin-left: 15px;
+	display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+#searchViaDate {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+.inp {
+	border: none;
+	outline: none;
+	border-bottom: 1px solid black;
+	font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+	font-size: 16px;
+	height: 1.5rem;
+	width: 15rem;
+	padding: 1.2rem;
+	/* background-color: rgb(64, 60, 60); */
+	/* color: white; */
+	box-sizing: border-box;    
+}
+
+
+.inp:focus {
+    border-bottom: 1px solid rgb(246, 127, 83);
+}
+
+.btn-small {
+    background-color: rgb(234, 167, 42);
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 13px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn-small:focus {
+	border: none;
+	outline: none;
+}
+
+.btn-small:active {
+	box-shadow: 0.4px 0.4px 3px 0px;
+}
+
+.btn-small:hover {
+    color: black;
+    background-color: rgb(234, 167, 42);
+}
+
+
+/* disabled buttons  */
+.btn-disabled {
+	background-color: rgb(146, 142, 134);
+    border-radius: 100px;
+    color: white;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 13px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn-disabled:focus {
+	border: none;
+	outline: none;
+}
+
+.btn-disabled:active {
+	border: none;
+	outline: none;
+}

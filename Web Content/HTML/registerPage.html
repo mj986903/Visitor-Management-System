@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../CSS/loginPage.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+
+<body>
+
+    <header>
+        <nav id="navBar">
+            <div id="navDiv">
+                <img src="../Images/logo.png" alt="" height="65%">
+                <span id="logo">Visitor Management</span>
+                <ul>
+                    <li><a href="http://localhost:8080/Development/">Home</a></li>
+                    <li><a href="loginPage.html">Login</a></li>
+                    <li><a href="registerPage.html">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <form action="register_add" method="post">
+            <h3>Register</h3>
+            <input type="text" placeholder="Username" class="inp" name="username">
+            <input type="password" placeholder="Password" class="inp" name="password">
+            <label for="user-role">User Role :</label> 
+    		<select name="user-role" id="user-role"> 
+        		<option value="Visitor">Visitor</option> 
+        		<option value="Security">Security</option> 
+        		<option value="Employee">Employee</option> 
+    		</select>
+  			<br>
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>
